@@ -72,6 +72,7 @@ function build_image() {
 
 function main() {
   echo "==> Building images with tag: $TAG"
+  sleep 20000
   if $USE_BUILDX; then
     ensure_buildx
   fi
