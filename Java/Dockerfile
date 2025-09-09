@@ -12,13 +12,13 @@ COPY gradle/ ./gradle/
 RUN chmod +x gradlew
 
 # Download dependencies (will cache unless build files change)
-RUN ./gradlew --no-daemon dependencies || true
+# RUN ./gradlew --no-daemon dependencies || true
 
 # Copy application source
 COPY src ./src
 
 # Build fat jar (Spring Boot)
-RUN ./gradlew --no-daemon clean bootJar
+RUN ./gradlew clean bootJar
 
 # Runtime stage
 FROM eclipse-temurin:17-jre AS runtime
