@@ -1,3 +1,6 @@
-cd NodeJs
+# cd NodeJs
 
-npm install --verbose
+# npm install --verbose
+
+
+docker pull openjdk:17
