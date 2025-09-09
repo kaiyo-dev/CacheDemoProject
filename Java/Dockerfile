@@ -1,6 +1,6 @@
 # Multi-stage Dockerfile for Spring Boot application
 # Build stage
-FROM eclipse-temurin:17-jdk AS build
+FROM openjdk:17 AS build
 
 WORKDIR /workspace
 
