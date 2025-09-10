@@ -30,7 +30,6 @@ dependencies {
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-	implementation 'org.eclipse.apoapsis.ortserver.config:github:0.28.0'
 }
 
 tasks.named('test') {
