@@ -1,6 +1,6 @@
 name: Greetings
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   greeting:
